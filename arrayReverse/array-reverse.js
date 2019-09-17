@@ -1,16 +1,16 @@
 'use strict'
 
 let reverseArray = function (input) {
-    if (typeof input !== 'array') {
-        return false
+  if (!Array.isArray(input)) {
+    return false;
+  }
+  else {
+    let result = [];
+    for (let index = input.length - 1; index >= 0; index--) {
+      result.push(input[index]);
     }
-    else {
-        for (let index = 0; index < input.length; index++) {
-            input.push(input[index]);
-            input.shift[input[index]];
-        }
-    }
-    return input;
-}
+    return result;
+  }
+};
 
 module.exports = reverseArray;

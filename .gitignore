@@ -5,6 +5,7 @@ temp
 data
 .env 
 *.env
+report.*.json
 
 ### Vim ###
 # swap
