@@ -3,7 +3,7 @@
 let binarySearch = require('./array-binary-search');
 
 describe('Binary Search', () => {
-  it('given an array, return index of matched key', () => {
+  xit('given an array, return index of matched key', () => {
     let array100 = [];
     let array10000 = [];
     let array100000 = [];
@@ -32,7 +32,7 @@ describe('Binary Search', () => {
     expect(binarySearch(array100000,key4)).toBe(1639);
   });
 
-  it('given an array, return -1 if key is not found', () => {
+  xit('given an array, return -1 if key is not found', () => {
     let array = [1,5,10,15,20,25,30,35];
     let key = 99;
 
