@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 let reverseArray = function (input) {
   if (!Array.isArray(input)) {
