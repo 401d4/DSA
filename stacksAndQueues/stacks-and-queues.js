@@ -1,6 +1,7 @@
 'use strict';
 
 class Node {
+  // eslint-disable-next-line no-unused-vars
   constructor(value, pointer) {
     this.value = value,
     this.pointer = null;
