@@ -14,20 +14,20 @@ class Stack {
   }
 
   push(value) {
-    if(typeof value !== 'number') { //MAKING SURE THE INPUT IS A NUMBER
+    if(typeof value !== 'number') {
       return console.error(value,'is not a valid input');
     }
     else if(this.top !== null) {
-      let newNode = new Node(value); //CREATE NEW NODE
-      newNode.pointer = this.top; //ASSIGN THE OLD TOP THIS THIS NODES POINTER VALUE
-      this.top = newNode; //THIS NODE IS NOW ASSIGNED TOP
-      this.stack.push(newNode); //STICK IT ON TOP
+      let newNode = new Node(value);
+      newNode.pointer = this.top;
+      this.top = newNode;
+      this.stack.push(newNode);
       return console.log(newNode.value,'is now the top!');
     }
     else {
-      let newNode = new Node(value); //CREATE NEW NODE
-      this.top = newNode; //THIS NODE IS NOW ASSIGNED TOP
-      this.stack.push(newNode); //STICK IT ON TOP
+      let newNode = new Node(value);
+      this.top = newNode;
+      this.stack.push(newNode);
       return console.log(newNode.value,'is the top!');
     }
   }
