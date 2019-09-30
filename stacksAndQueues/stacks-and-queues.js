@@ -23,13 +23,13 @@ class Stack {
       newNode.pointer = this.top;
       this.top = newNode;
       this.stack.push(newNode);
-      return console.log(newNode.value,'is now the top!');
+      // return console.log(newNode.value,'is now the top!');
     }
     else {
       let newNode = new Node(value);
       this.top = newNode;
       this.stack.push(newNode);
-      return console.log(newNode.value,'is the top!');
+      // return console.log(newNode.value,'is the top!');
     }
   }
 
